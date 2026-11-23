@@ -1,6 +1,6 @@
 cask "mercury" do
-  version "0.2.0"
-  sha256 "42d82d0a67c984d842ca2e537a3281a22723dd8591db61dd89896d99fb44c3e4"
+  version "0.3.0"
+  sha256 "335f0005293d15983454bb47004214b8598dc76a96c631579cf5e84d52ce6113"
 
   url "https://github.com/usemercury/mercury-releases/releases/download/v#{version}/Mercury_#{version}_universal.dmg"
   name "Mercury"
@@ -11,6 +11,9 @@ cask "mercury" do
     url :url
     strategy :github_latest
   end
+
+  # Mercury updates itself (title bar > Update), so `brew upgrade` leaves it alone.
+  auto_updates true
 
   app "Mercury.app"
 
