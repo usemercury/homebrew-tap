@@ -1,6 +1,6 @@
 cask "mercury" do
-  version "0.3.0"
-  sha256 "335f0005293d15983454bb47004214b8598dc76a96c631579cf5e84d52ce6113"
+  version "0.3.1"
+  sha256 "9d42335e1200092ecc743c40e9cf019a5bea6b2819637ab5934002dce916108c"
 
   url "https://github.com/usemercury/mercury-releases/releases/download/v#{version}/Mercury_#{version}_universal.dmg"
   name "Mercury"
